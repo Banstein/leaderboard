@@ -1,6 +1,6 @@
 # Leaderboard
 
-A Leaderboard app used for calculating the highest score with names.
+A Leaderboard app used for calculating the highest score with names and sharing fun with your friends.
 
 ## Built With
 
