@@ -3,7 +3,8 @@
 A Leaderboard app used for calculating the highest score with names and sharing fun with your friends.
 
 ## Screenshot
-![leader](https://user-images.githubusercontent.com/35707975/156464705-2bc4e486-fc9a-476a-8e0b-e16151f7736e.png)
+![leader]![Screenshot 2022-03-04 181953](https://user-images.githubusercontent.com/35707975/156800143-3a573957-756f-499d-9134-cc9325bc212f.png)
+
 
 ## Built With
 
