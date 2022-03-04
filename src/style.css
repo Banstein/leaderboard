@@ -100,13 +100,13 @@ button {
   transition: transform 0.4s;
 }
 
+form button {
+  align-self: flex-end;
+}
+
 button:hover {
   background-color: #c19d53;
   color: white;
-}
-
-form button {
-  align-self: flex-end;
 }
 
 li:nth-child(even) {
