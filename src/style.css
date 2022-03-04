@@ -59,13 +59,13 @@ li {
   width: 300px;
 }
 
-.right-wrap {
+form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.right-wrap > * {
+form > * {
   padding: 7px;
   border: 3px solid black;
   margin-bottom: 25px;
@@ -76,6 +76,7 @@ input::placeholder {
 }
 
 button {
+  cursor: pointer;
   font-size: 1rem;
   padding: 4px;
   border: 3px solid black;
