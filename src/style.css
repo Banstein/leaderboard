@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: #c19d53;
+}
+
+body {
+  background-image: url(images/cropped-1920-1080-1151250.jpg);
+  background-position: 0 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  margin: 50px 20px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-right: 30%;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* left block */
+
+.left-block {
+  margin-right: 20px;
+  width: 400px;
+}
+
+.left-block div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  border: 1px solid;
+  margin-top: 20px;
+  overflow-y: scroll;
+  max-height: 700px;
+}
+
+li {
+  list-style-type: none;
+  padding: 16px;
+  font-size: 20px;
+}
+
+/* right block */
+.right-block {
+  width: 300px;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  padding: 7px;
+  border: 3px solid black;
+  margin-bottom: 25px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px;
+  border: #c19d53 solid 1px;
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: #c19d53;
+  transition: transform 0.4s;
+}
+
+form button {
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #c19d53;
+  color: white;
+}
+
+li:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.txt-centre {
+  text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section > div {
+    max-width: 300px;
+  }
+}

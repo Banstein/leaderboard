@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <title>Leaderboard</title>
+</head>
+<body>
+  <main>
+    <nav>
+      <h1>Leaderboard</h1>
+    </nav>
+    <section>
+      <div class="left-block">
+        <div>
+          <h2>Recent scores</h2>
+          <button class="refBtn">Refresh</button>
+        </div>
+        <ul class="eleInject"></ul>
+      </div>
+      <div class="right-block">
+        <h2 class="txt-centre">Add your <br> Death count</h2>
+        <form class="form">
+          <input type="text" name="name" pattern="[a-z,A-Z]{2,30}" placeholder="Your name" required id="name">
+          <input type="number" name="score" placeholder="Your score" required id="score">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
