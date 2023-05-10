@@ -2,6 +2,7 @@
 
 A Leaderboard app used for calculating the highest score with names and sharing fun with your friends.
 
+[Live Demo](https://banstein.github.io/leaderboard/)
 ## Screenshot
 ![Screenshot 2022-03-04 181953](https://user-images.githubusercontent.com/35707975/156800143-3a573957-756f-499d-9134-cc9325bc212f.png)
 
