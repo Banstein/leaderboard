@@ -1,42 +1,13 @@
 import './style.css';
+import postScore from './modules/postAPI.js';
 // Send Data to API ==> Create a new Game
 
-const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-
-fetch(api, {
-  method: 'POST',
-  body: JSON.stringify({
-    name: 'Elden Ring',
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-});
-
-// Send Data to API ==> Create a new score for the given game
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/dkVlemfUdzOZVg2IT74T/scores/';
 
 const form = document.querySelector('.form');
-const userName = document.querySelector('#name');
+const user = document.querySelector('#name');
 const score = document.querySelector('#score');
-
-const newScoreAndUser = async () => {
-  await fetch(`${api}dkVlemfUdzOZVg2IT74T/scores/`, {
-    method: 'POST',
-    body: JSON.stringify({
-      user: userName.value,
-      score: score.value,
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  });
-};
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  newScoreAndUser();
-  form.reset();
-});
+const refreshBtn = document.querySelector('.refBtn');
 
 // Display the Data
 
@@ -49,18 +20,23 @@ const display = (data) => {
   });
 };
 
-// GET Data to API
-
-const refreshBtn = document.querySelector('.refBtn');
+// GET Data from API
 
 const getScoresList = async () => {
-  const getScrores = await fetch(`${api}dkVlemfUdzOZVg2IT74T/scores/`);
+  const getScrores = await fetch(`${url}`);
   const reponse = await getScrores.json();
   const data = JSON.parse(JSON.stringify(reponse));
   display(data.result);
 };
 
+// Send Data to API ==> Create a new score for the given game
+
 refreshBtn.addEventListener('click', getScoresList);
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  postScore(url, user, score);
+  form.reset();
+});
 
 // Window onLoad
 
